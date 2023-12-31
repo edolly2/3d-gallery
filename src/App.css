@@ -105,6 +105,8 @@
 
 .gallery-controls-previous {
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .gallery-controls-previous::before {
@@ -128,6 +130,9 @@
 
 .gallery-controls-next {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .gallery-controls-next::before {
@@ -136,11 +141,12 @@
   content: '';
   display: inline-block;
   height: 5px;
-  left: -30px;
+  right: -30px;
   padding: 10px;
   position: absolute;
-  right: -30px;
-  top: 45;
+  /* left: -30px; */
+  /* left: -30px; */
+  top: 45px;
   transform: rotate(-40deg) translateY(-50%);
   transition: right 0, 15s ease-in-out;
   width: 5px;
